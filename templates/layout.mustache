@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="delivery.css" type="text/css" media="all" charset="utf-8" />
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+$('#form').live('submit',function(){
+    var form = $(this);
+   $.ajax({
+    type: 'post',
+    dataType: 'json',
+    url: $(this).attr('action'),
+    data: form.serialize(),
+    success: function(data){
+       data == true ? $('#message').html('<h1>Hurray! Bagels for you!</h1>') : $('#message').html('<h1>NO BAGEL FOR YOU!</h1>');
+       
+    }
+    
+   });
+   return false;  
+});
+</script>
+</head>
+<body>
+{{{yield}}}
+</body>
+</html>

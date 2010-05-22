@@ -1,0 +1,3 @@
+class Layout < Mustache
+  
+end

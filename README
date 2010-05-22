@@ -1,0 +1,1 @@
+This app was done as part of the New York Ruby Meetup mobhack as an intro to writing Sinatra applications. Its a very simple app that tells you whether Bagels can be delivered to you or not. The source of the Bagels is Pivotal Lab's New York office since the meetup was held there.
